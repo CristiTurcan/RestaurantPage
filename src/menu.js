@@ -1,6 +1,6 @@
 function loadMenu (content) {
-    const title = document.createElement('h1')
-    title.textContent = 'Menu';
+    const container = document.createElement('div');
+    container.classList.add('container');
 
     const item = document.createElement('div');
     item.textContent = 'Pizza is good';
@@ -11,10 +11,11 @@ function loadMenu (content) {
     const item3 = document.createElement('div');
     item3.textContent = 'Cheese is good';
 
-    content.appendChild(title);
-    content.appendChild(item);
-    content.appendChild(item2);
-    content.appendChild(item3);
+    container.appendChild(item);
+    container.appendChild(item2);
+    container.appendChild(item3);
+
+    content.appendChild(container);
 }
 
 export default loadMenu;

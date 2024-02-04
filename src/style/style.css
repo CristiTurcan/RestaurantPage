@@ -48,11 +48,15 @@ body {
     margin-bottom: 1em;
 }
 
+.selectedButton {
+    color:white;   
+}
+
 .header nav button {
     border: 0px;
     border-radius: 40px;
     padding: 10px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'sans-serif';
     font-weight: 200;
     font-size: 1.2em;
     background-color: black;
@@ -63,6 +67,38 @@ body {
     color:white;
 }
 
-.header nav button:focus {
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 100;
     color:white;
+    background-color: black;
+    opacity: 0.8;
+    height: 30em;
+    width: 30em;
+    margin:3em;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
 }
